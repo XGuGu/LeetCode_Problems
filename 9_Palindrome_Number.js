@@ -35,3 +35,6 @@ function isPalindrome(x) {
   }
   return rev === x || Math.trunc(rev/10) === x;
 }
+
+
+用while 循环，迭代一次即可解决
