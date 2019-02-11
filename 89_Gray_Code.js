@@ -26,3 +26,27 @@ Output: [0]
 Explanation: We define the gray code sequence to begin with 0.
              A gray code sequence of n has size = 2n, which for n = 0 the size is 20 = 1.
              Therefore, for n = 0 the gray code sequence is [0].
+
+var grayCode = function(n) {
+ const ans = [0]; // start from 0
+ for (let i = 1; i <= n; i++) {
+   const m = Math.pow(2, i - 1);
+   for (let j = ans.length - 1; j >= 0; j--) {
+     ans.push(m + ans[j]);
+   }
+ }
+ return ans;
+};
+
+
+// ans = 0;
+// n = 2
+// i = 1;
+//
+// m = 1 ,  ans.push(1 + 0)
+//
+// ans = [0, 1]
+// i = 2
+// m = 2
+// ans.push(2 + 1)
+// ans.push(2 + 0)
