@@ -15,7 +15,7 @@ Output: 2
 Explanation: The square root of 8 is 2.82842..., and since
              the decimal part is truncated, 2 is returned.
 
-             //easy
+//easy
 
 var mySqrt = function(x) {
  if (x === 0 || x === 1) return x;
