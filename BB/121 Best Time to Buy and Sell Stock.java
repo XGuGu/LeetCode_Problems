@@ -9,3 +9,22 @@ max. difference = 6-1 = 5 (not 7-1 = 6, as selling price needs to be larger than
 Example 2: Input: [7, 6, 4, 3, 1] Output: 0
 
 In this case, no transaction is done, i.e. max profit = 0.
+
+
+class Solution {
+    public int maxProfit(int[] prices) {
+      if (prices == null || prices.length < 2) {
+        return 0;
+      }
+
+      int min = prices[0];
+      int profit = 0;
+      for (int price : prices ) {
+        min = Math.min(min, price);
+        profit = Math.max(profit, price - min);
+      }
+
+      return profit;
+
+    }
+}
