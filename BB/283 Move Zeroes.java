@@ -23,8 +23,8 @@ class Solution {
             slow++;
           }
         }
-        for (int i = slow; i < nums.lenght ; i++ ) {
-          nums[i] = 0
+        for (int i = slow; i < nums.length ; i++ ) {
+          nums[i] = 0;
         }
 
     }
