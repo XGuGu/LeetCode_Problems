@@ -16,7 +16,6 @@ Explanation: The square root of 8 is 2.82842..., and since
              the decimal part is truncated, 2 is returned.
 
 //easy
-
 var mySqrt = function(x) {
  if (x === 0 || x === 1) return x;
  let start = 1;
@@ -30,7 +29,7 @@ var mySqrt = function(x) {
    else if (v1 > x) end = mid - 1;
  }
 
- 
+
 
  return null;
 };
