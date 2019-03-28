@@ -15,8 +15,6 @@ return its zigzag level order traversal as:
 ]
 
 
-
-
 var zigzagLevelOrder = function(root) {
   const r = [];
   const levelOrder = (node, level=0) => {
