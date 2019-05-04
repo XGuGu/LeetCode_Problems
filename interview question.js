@@ -127,3 +127,43 @@ Hoisting is a JavaScript mechanism where variables and function declarations are
 
 8.	Ajax:
 A technique used in order to send and retrieve data in background without refreshing a page.  Send request and receive JSON data
+
+React:
+        1.  What is State ?
+	State is a data structure that starts with a default value when a component mounts, it can be mutated.
+          State is similar to props, but it is private and fully controlled by the component. State is essentially an object that holds data and determines how the component renders and behaves.
+
+
+        2. What is Props ?
+	Props are a components configuration. They are received from above and immutable.
+
+        3.  where in a React component should you make an AJAX call ?
+             ComponentDidMount is where we make an ajax call. It will be executed when the component “mounts” for the first time. And it will only execute once during the component’s life.
+
+  4. What are controlled components ?
+           The component containing the form will keep track of the value of the input in it's state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated.
+
+       5.  Why is it advised to pass a callback function to setState as opposed to an object ?
+           Because this.props and this.state may be updated asynchronously, you should not rely on their values for calculating the next state.
+
+       6.  What is the purpose of super(props) ?
+            A child class constructor cannot make use of this until super() has been called. The reason for passing props to super() is to enable you to access this.props in the constructor.
+
+       7. What is redux ?
+           The basic idea of redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by sending actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
+      8. What is redux Thunk used for ?
+       Redux thunk is middleware that allows you to write action creators that return a function instead of an action. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asynchronous          dispatching of actions.
+
+      9. What is an action ?
+Actions are plain javascript objects. They must have a type indicating the type of action being performed. In essence, actions are payloads of information that send data from your application to your store.
+
+
+      10. What is a reducer ?
+ 	A reducer is simply a pure function that takes the previous state and an action, and returns the next state.
+
+       11. What is a Store in redux ?
+	The store is a javascript object that holds application state. Along with this it also has the following responsibilities:
+•	Allows access to state via getState();
+•	Allows state to be updated via dispatch(action);
+•	Registers listeners via subscribe(listener);
+•	Handles unregistering of listeners via the function returned by subscribe(listener).
