@@ -167,3 +167,95 @@ Actions are plain javascript objects. They must have a type indicating the type 
 •	Allows state to be updated via dispatch(action);
 •	Registers listeners via subscribe(listener);
 •	Handles unregistering of listeners via the function returned by subscribe(listener).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JSP 是什么？
+HTML 5 validation 是什么？
+
+HTML5 新feature，audio，video怎么用， new APIs 是什么
+
+Local Stroage 作用？
+
+Difference between GET and POST
+
+Common method GET POST PUT DELETE
+
+Difference between observable and promise:
+Promises: return a single value, not cancellable, more readable code with try/catch and async/await
+
+Observales: work with multiple values over time, cancelable……..
+
+Observables are lazy, subscribe 处理后端发送过来的实时数据， if you don’t subscribe nothing is going to happen. It s good to know that when
+
+Design pattern:
+
+Angular Service 特征 singleton, prototype
+
+Angular component lifecycle
+
+Ngonchange()
+….
+Ngoninit()
+
+
+Router
+
+Node is an open source platform
+Npm is the largest ecosystem of open source libraries in the world.
+Node is the server side operating environment for JavaScript
+
+NodeJs  MongoDB, no Oracle
+
+Node Event Driven
+
+Node js  error handle
+1. throw an exception
+2. error object passed to the callback function, by the callback function is responsible for handling errors
+3. Use try catch to catch the exception
+
+Assertion
+For the test : assert, expect, should (unit testing)
+Assert.equal(event.detail.item, ‘(item)’)
+
+
+Process and thread
+One process can have mutli thread
+
+Event loop: (event driven question)
+….see cheat sheet
+
+CommonJS a set of standards Moudels
+
+NPM is package management
+
+Spring 原理
+Hibernate..
+
+
+
+
+
+
+
+
+
+
+
+
+HTML：
+什么是document markup？？
+
+Css external internal inline 这三种在实际应用中是什么样的？
