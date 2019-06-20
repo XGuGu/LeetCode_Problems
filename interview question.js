@@ -245,13 +245,20 @@ Spring 原理
 Hibernate..
 
 
+How to get an element in DOM ?
 
+var x = document.getElementById("domDemo");
+var y = x.getElementsByTagName("p");
+y[0].innerHTML = "Helllo P"
+var x = document,getElementsByClassName("pl");
+x[0].innerHTML = "hello";
+var x = document.querySelectorAll("p.pl");
+x[0].innerHTML = "hello";
 
+How to change the content/attribute/style/class on any element using Javascript ?
 
-
-
-
-
+document.getElementById(id).innerHTML = new HTMl;
+document.getElementById.attribute = new value;
 
 
 
@@ -259,3 +266,31 @@ HTML：
 什么是document markup？？
 
 Css external internal inline 这三种在实际应用中是什么样的？
+
+Three attributes in event object:
+1.capturing,
+2.targeting,
+3.bubbling
+
+
+var onLoadFunction = function() {
+
+  /*****
+  Using fromCapture=true uses event Capture phase to execute the
+  event. fromCapture=false uses event Bubbling phase to execute the
+  event.
+  *****/
+  var fromCapture = true;
+
+  var p = document.querySelector('#parent');
+
+  p.addEventListener('click', function() {
+    console.log('parent clicked');
+  }, fromCapture);
+
+  var c = document.querySelector('#child');
+
+  c.addEventListener('click', function() {
+    console.log('clild clicked');
+  }, fromCapture);
+}
