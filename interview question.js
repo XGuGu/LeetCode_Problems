@@ -294,3 +294,22 @@ var onLoadFunction = function() {
     console.log('clild clicked');
   }, fromCapture);
 }
+
+
+
+var student_name = ["X", "S", "A", "Z", "K"];
+var student_marks = [95, 98, 92, 94, 100];
+//write a logic that will sort student name along with marks;
+
+var rest_API_pool = ['/a', '/b', '/c', '/d'];
+//write a logic that will make one rest api call and finish it and then make second call and so on.
+
+Explain what are directive?
+
+What is angular elements?
+
+What is Promise in Javascript?
+
+Write a promise example
+
+let vs var vs const
