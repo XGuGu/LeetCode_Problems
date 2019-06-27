@@ -356,3 +356,13 @@ ngOnDestroy()
 Cleanup just before Angular destroys the directive/component. Unsubscribe Observables and detach event handlers to avoid memory leaks.
 
 Called just before Angular destroys the directive/component.
+
+vender questions:
+Single page application
+Company ccr全名
+Why use angular js
+Do you think angular fast than jQuery ？explain it
+What is Dom ？stands for ？
+Angular  mvvm
+How to write  Spa  Example
+Spa 的例子
